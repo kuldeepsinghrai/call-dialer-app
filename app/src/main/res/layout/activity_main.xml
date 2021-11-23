@@ -34,7 +34,7 @@
                     android:textAlignment="textEnd"
                     android:gravity="center"
                     android:text=""
-                    android:maxLength="13"
+                    android:maxLength="10"
                     android:singleLine="true"
                     android:layout_margin="12dp"
                     android:textStyle="bold"
