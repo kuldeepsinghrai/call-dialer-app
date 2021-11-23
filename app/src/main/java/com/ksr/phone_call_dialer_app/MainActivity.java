@@ -147,10 +147,12 @@ public class MainActivity extends AppCompatActivity {
         btnClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                StringBuilder stringBuilder = new StringBuilder(textNumber.getText());
-                stringBuilder.deleteCharAt(textNumber.getText().length()-1);
-                String newTextNumberString = stringBuilder.toString();
-                textNumber.setText(newTextNumberString);
+                if(!textNumber.getText().toString().equals("")){
+                    StringBuilder stringBuilder = new StringBuilder(textNumber.getText());
+                    stringBuilder.deleteCharAt(textNumber.getText().length() - 1);
+                    String newTextNumberString = stringBuilder.toString();
+                    textNumber.setText(newTextNumberString);
+                }
             }
         });
 
